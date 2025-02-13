@@ -1,5 +1,5 @@
 <?php
-
+/*
 $name = "Abdelrahman Khalifa";
 
-var_dump($name);
+var_dump($name);*/

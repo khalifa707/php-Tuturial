@@ -18,7 +18,7 @@ calculateArea(10,20);*/
 $area = calculateArea(2,20);
 echo 50 + $area;*/
 
-function isEven($number) {
+/*function isEven($number) {
     // Check if the number is divisible by 2
     if ($number % 2 == 0) {
         return true; // The number is even
@@ -33,4 +33,6 @@ if (isEven($number)) {
     echo "$number is even.";
 } else {
     echo "$number is odd.";
-}
+}*/
+
+

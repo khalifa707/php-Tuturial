@@ -12,7 +12,7 @@
     }
 
 }*/
-if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+/*if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $search_query = htmlspecialchars(trim($_GET['query']));
 
     if(!empty($search_query)) {
@@ -20,4 +20,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     }else{
         echo "Please Enter Search Query ";
     }
+}*/
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $usernameErrors = $usernameErrors = "";
+    $username = $username = "";
+
+    if(empty($_POST["username"])){
+        $usernameErrors = "Please enter username";
+    }else{
+        $username = htmlspecialchars(trim($_POST["username"]));
+    }
+
+    echo $username;
 }
+

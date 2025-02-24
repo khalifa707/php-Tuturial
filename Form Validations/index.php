@@ -12,8 +12,8 @@
 <h2>Simple Form</h2>
 
 <form action="Process.php" method="post">
-    <<input name="Username" type="text" placeholder="Enter Username" aria-label="">
-    <input name="Password" type="password" placeholder="Enter Password" aria-label="">
+    <<input name="username" type="text" placeholder="Enter Username" aria-label="">
+    <input name="password" type="password" placeholder="Enter Password" aria-label="">
     <input type="Submit" aria-label="">
 </form>
 

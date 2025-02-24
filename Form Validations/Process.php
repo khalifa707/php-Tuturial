@@ -1,9 +1,14 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST['Username'];
-    $password = $_POST['Password'];
+    $username = htmlspecialchars(trim($_POST['Username']));
+    $password = htmlspecialchars(trim($_POST['Password']));
 
-    echo $username . "<br>";
-    echo $password . "<br>";
+    if (!empty($username) && !empty($password)) {
+        echo "Name:" . $username . "<br>";
+        echo "Password:" . $password . "<br>";
+    }else{
+        echo "Fill in all fields";
+    }
+
 }
